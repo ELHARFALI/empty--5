@@ -76,14 +76,14 @@ const Header = ({type}) => {
                                 onChange={item => setDate([item.selection])}
                                 moveRangeOnFirstSelection={false}
                                 ranges={date}
-                                className='absolute top-[55px] border border-gray-400 rounded-2xl overflow-hidden'
+                                className='absolute top-[55px] z-[2] border border-gray-400 rounded-2xl overflow-hidden'
                             />}
                         </div>
                         <div className='flex items-center gap-[10px]  '>
                             <FontAwesomeIcon icon={faPerson} className='text-gray-400' />
                             <span onClick={() => setOpenOptions(prev => !prev)} className='text-gray-400 cursor-pointer'>{`${options.adult} adult . ${options.children} children . ${options.room} room`}</span>
                         {/* //// */}
-                            { openOptions && <div className='absolute top-[50px] bg-white border border-gray-500 rounded-xl shadow-xl p-[10px]'>
+                            { openOptions && <div className='absolute z-[2] top-[50px] bg-white border border-gray-500 rounded-xl shadow-xl p-[10px]'>
                                 <div className='text-gray-500 w-[200px] flex justify-between items-center mb-2 '>
                                     <span>Adults</span>
                                     <div className='flex items-center gap-[10px] text-sm '>
