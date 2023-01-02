@@ -4,6 +4,7 @@ import Featured from "./Featured";
 import PropertyList from "./PropertyList";
 import FeaturedProperties from "./FeaturedProperties";
 import MailList from "./MailList";
+import Footer from "./Footer";
 
 export {
     Navbar,
@@ -11,5 +12,6 @@ export {
     Featured,
     PropertyList,
     FeaturedProperties,
-    MailList
+    MailList,
+    Footer
 }
